@@ -1,0 +1,93 @@
+<Config>
+  <EEGEmotiv prefix=".*" suffix=".md.bp" extension="csv">
+    <Delimiter>,</Delimiter>
+    <LineOfFirstData>2</LineOfFirstData>
+    <ReplaceChar></ReplaceChar>
+    <ReplaceBy></ReplaceBy>
+    <FieldIndexOfTimestamp>0</FieldIndexOfTimestamp>
+    <Divider>1</Divider>
+    <DropIfCellIsEmpty>70</DropIfCellIsEmpty>
+    <ColumnTitlesCustom>Timestamp,OriginalTimestamp,EEG.Counter,EEG.Interpolated,EEG.AF3,EEG.F3,EEG.FC5,EEG.T7,EEG.P7,EEG.O1,EEG.O2,EEG.P8,EEG.T8,EEG.FC6,EEG.F4,EEG.F8,EEG.AF4,EEG.RawCq,EEG.Battery,EEG.BatteryPercent,EEG.FwBufferSize,EEG.FwClockTime,MarkerIndex,MarkerType,MarkerValueInt,EEG.MarkerHardware,CQ.AF3,CQ.F3,CQ.FC5,CQ.T7,CQ.P7,CQ.O1,CQ.O2,CQ.P8,CQ.T8,CQ.FC6,CQ.F4,CQ.F8,CQ.AF4,CQ.Overall,EQ.SampleRateQuality,EQ.OVERALL,EQ.AF3,EQ.F3,EQ.FC5,EQ.T7,EQ.P7,EQ.O1,EQ.O2,EQ.P8,EQ.T8,EQ.FC6,EQ.F4,EQ.F8,EQ.AF4,MOT.CounterMems,MOT.InterpolatedMems,MOT.Q0,MOT.Q1,MOT.Q2,MOT.Q3,MOT.AccX,MOT.AccY,MOT.AccZ,MOT.MagX,MOT.MagY,MOT.MagZ,POW.AF3.Theta,POW.AF3.Alpha,POW.AF3.BetaL,POW.AF3.BetaH,POW.AF3.Gamma,POW.F3.Theta,POW.F3.Alpha,POW.F3.BetaL,POW.F3.BetaH,POW.F3.Gamma,POW.FC5.Theta,POW.FC5.Alpha,POW.FC5.BetaL,POW.FC5.BetaH,POW.FC5.Gamma,POW.T7.Theta,POW.T7.Alpha,POW.T7.BetaL,POW.T7.BetaH,POW.T7.Gamma,POW.P7.Theta,POW.P7.Alpha,POW.P7.BetaL,POW.P7.BetaH,POW.P7.Gamma,POW.O1.Theta,POW.O1.Alpha,POW.O1.BetaL,POW.O1.BetaH,POW.O1.Gamma,POW.O2.Theta,POW.O2.Alpha,POW.O2.BetaL,POW.O2.BetaH,POW.O2.Gamma,POW.P8.Theta,POW.P8.Alpha,POW.P8.BetaL,POW.P8.BetaH,POW.P8.Gamma,POW.T8.Theta,POW.T8.Alpha,POW.T8.BetaL,POW.T8.BetaH,POW.T8.Gamma,POW.FC6.Theta,POW.FC6.Alpha,POW.FC6.BetaL,POW.FC6.BetaH,POW.FC6.Gamma,POW.F4.Theta,POW.F4.Alpha,POW.F4.BetaL,POW.F4.BetaH,POW.F4.Gamma,POW.F8.Theta,POW.F8.Alpha,POW.F8.BetaL,POW.F8.BetaH,POW.F8.Gamma,POW.AF4.Theta,POW.AF4.Alpha,POW.AF4.BetaL,POW.AF4.BetaH,POW.AF4.Gamma</ColumnTitlesCustom>
+    <TimeOffset fixedTimeOffsetValue="0" useFixedTimeOffsetValue="true" />
+  </EEGEmotiv>
+
+  <GSRShimmerImotionsLSL prefix=".*" suffix="GSR_shimmer_shimmer3_ET_Lsl_LslSensor" extension="csv">
+    <Delimiter>,</Delimiter>
+    <LineOfFirstData>20</LineOfFirstData>
+    <ReplaceChar></ReplaceChar>
+    <ReplaceBy></ReplaceBy>
+    <UseFieldsIndex>3,4</UseFieldsIndex>
+    <FieldIndexOfTimestamp>1</FieldIndexOfTimestamp>
+    <Divider>1000</Divider>
+    <DropIfCellIsEmpty>0</DropIfCellIsEmpty>
+    <ColumnTitlesCustom>Timestamp,GSR,GSR_CONDUCTANCE</ColumnTitlesCustom>
+    <TimeOffset fixedTimeOffsetValue="0" useFixedTimeOffsetValue="true" />
+  </GSRShimmerImotionsLSL>
+
+  <ECGPolarImotionsLSL prefix=".*" suffix="ECG_PolarbandLSL_eyeqtrack-pi-polar_ET_Lsl_LslSensor" extension="csv">
+    <Delimiter>,</Delimiter>
+    <LineOfFirstData>21</LineOfFirstData>
+    <ReplaceChar></ReplaceChar>
+    <ReplaceBy></ReplaceBy>
+    <UseFieldsIndex>3</UseFieldsIndex>
+    <FieldIndexOfTimestamp>1</FieldIndexOfTimestamp>
+    <Divider>1000</Divider>
+    <DropIfCellIsEmpty>0</DropIfCellIsEmpty>
+    <ColumnTitlesCustom>Timestamp,HR</ColumnTitlesCustom>
+    <TimeOffset fixedTimeOffsetValue="0" useFixedTimeOffsetValue="true" />
+  </ECGPolarImotionsLSL>
+
+  <GSRShimmerImotionsNative prefix=".*" suffix="Shimmer3-F5B6_Shimmer3-F5B6_ET_Shimmer_ShimmerDevice" extension="csv">
+    <Delimiter>,</Delimiter>
+    <LineOfFirstData>23</LineOfFirstData>
+    <ReplaceChar></ReplaceChar>
+    <ReplaceBy></ReplaceBy>
+    <UseFieldsIndex>16,17,18</UseFieldsIndex>
+    <FieldIndexOfTimestamp>1</FieldIndexOfTimestamp>
+    <Divider>1000</Divider>
+    <DropIfCellIsEmpty>0</DropIfCellIsEmpty>
+    <ColumnTitlesCustom>Timestamp,GSR RAW,GSR Resistance CAL,GSR Conductance CAL</ColumnTitlesCustom>
+    <TimeOffset 
+      filePrefix=".*"
+      filePostfix = "Native_SlideEvents.*"
+      fileExtension = "csv"
+      timeOffsetHookName = "CavirTimeOffset"
+      fixedTimeOffsetValue="0"
+      useFixedTimeOffsetValue="false" 
+    />
+  </GSRShimmerImotionsNative>
+
+  <ECGPolarImotionsNative prefix=".*" suffix="HeartRate_Polarr_ET_Ble_BleSensor" extension="csv">
+    <Delimiter>,</Delimiter>
+    <LineOfFirstData>20</LineOfFirstData>
+    <ReplaceChar></ReplaceChar>
+    <ReplaceBy></ReplaceBy>
+    <UseFieldsIndex>2,3</UseFieldsIndex>
+    <FieldIndexOfTimestamp>1</FieldIndexOfTimestamp>
+    <Divider>1000</Divider>
+    <DropIfCellIsEmpty>0</DropIfCellIsEmpty>
+    <ColumnTitlesCustom>Timestamp,BpM,RRI</ColumnTitlesCustom>
+    <TimeOffset 
+      filePrefix=".*"
+      filePostfix = "Native_SlideEvents.*"
+      fileExtension = "csv"
+      timeOffsetHookName = "CavirTimeOffset"
+      fixedTimeOffsetValue="0"
+      useFixedTimeOffsetValue="false" 
+    />
+  </ECGPolarImotionsNative>
+
+  <EyetrackingHeadset prefix=".*" suffix="markers_(?:cavir|rc).*" extension="csv">
+    <Delimiter>;</Delimiter>
+    <LineOfFirstData>0</LineOfFirstData>
+    <ReplaceChar></ReplaceChar>
+    <ReplaceBy></ReplaceBy>
+    <UseFieldsIndex>3,4,5,6,7,8,9,10,11,12,13,14,15,16</UseFieldsIndex>
+    <FieldIndexOfTimestamp>0</FieldIndexOfTimestamp>
+    <Divider>1</Divider>
+    <DropIfCellIsEmpty>0</DropIfCellIsEmpty>
+    <ColumnTitlesCustom>Timestamp,Velocity_Left,Velocity_Right,Fixation_Left,Fixation_Right,Saccade_Left,Saccade_Right,Pupil_Diameter_Left,Pupil_Diameter_Right,Gaze_Left_x,Gaze_Left_y,Gaze_Left_z,Gaze_Right_x,Gaze_Right_y,Gaze_Right_z</ColumnTitlesCustom>
+    <TimeOffset fixedTimeOffsetValue="0" useFixedTimeOffsetValue="true" />
+    <SkipLastLines>1</SkipLastLines>
+  </EyetrackingHeadset>
+</Config>

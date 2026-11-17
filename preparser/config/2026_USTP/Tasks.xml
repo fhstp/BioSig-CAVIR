@@ -1,0 +1,13 @@
+<Config>
+  <CAVIR>
+    <ExpectedSections>11</ExpectedSections>
+
+    <DeviceInputs>
+     
+    </DeviceInputs>
+    <MarkerInputs>
+      <RedCross_Cavir_HMD_Markers />
+    </MarkerInputs>
+  </CAVIR>
+
+</Config>

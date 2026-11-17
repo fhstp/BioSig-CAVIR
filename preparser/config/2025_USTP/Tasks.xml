@@ -1,0 +1,14 @@
+<Config>
+  <CAVIR>
+    <!-- 2025_USTP: scene1_read + scene1..scene5 (no EEG eyes-open/close/calibration, no RedCross) -->
+    <ExpectedSections>6</ExpectedSections>
+
+    <DeviceInputs>
+     
+    </DeviceInputs>
+    <MarkerInputs>
+      <RedCross_Cavir_HMD_Markers />
+    </MarkerInputs>
+  </CAVIR>
+
+</Config>

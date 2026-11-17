@@ -1,0 +1,37 @@
+<Config>
+  <RedCross_Cavir_HMD_Markers prefix=".*" suffix="markers_(?:cavir|rc).*" extension="csv">
+    <ColumnDelimiter>;</ColumnDelimiter>
+    <LineOfFirstData>0</LineOfFirstData>
+    <FieldIndexOfTimestamp>0</FieldIndexOfTimestamp>
+    <FieldIndexOfMarkers>2</FieldIndexOfMarkers>
+    <MarkerNumbers>scene1_work,scene2_work,scene3_work,scene4_work,scene5_work,RedCross_1_running</MarkerNumbers>
+    <MarkerAliases>Start1,Start2,Start3,Start4,Start5,RedCross</MarkerAliases>
+    <!--<EndingMarkers>90</EndingMarkers>-->
+    <EndingMarkers>scene1_end,scene2_end,scene3_end,scene4_end,scene5_end</EndingMarkers>
+    <IgnoreMarkers>scene1_intro,scene2_intro,scene3_intro,scene4_intro,scene5_intro,starting_phase,wait_for_closing</IgnoreMarkers>
+    <ReplaceMarkerBefore>scene5_end,scene5_work,245</ReplaceMarkerBefore>
+    <SkipLastLines>1</SkipLastLines>
+  </RedCross_Cavir_HMD_Markers>
+
+  <KeyBoardToolMarkers prefix=".*" suffix="Markers_test.*" extension="csv">
+    <ColumnDelimiter>,</ColumnDelimiter>
+    <LineOfFirstData>20</LineOfFirstData>
+    <FieldIndexOfTimestamp>1</FieldIndexOfTimestamp>
+    <FieldIndexOfMarkers>3</FieldIndexOfMarkers>
+    <MarkerNumbers>30,40,50,60,70,80,90</MarkerNumbers>
+    <!--<MarkerNumbers>60,70,80,90,100,110,50</MarkerNumbers>-->
+    <MarkerAliases>Start1,Start2,Start3,Start4,Start5,RedCross,End</MarkerAliases>
+    <!--<EndingMarkers>50</EndingMarkers>-->
+    <EndingMarkers>90</EndingMarkers>
+  </KeyBoardToolMarkers>
+
+  <EmotivMarkers prefix=".*" suffix="_intervalMarker" extension="csv">
+    <ColumnDelimiter>,</ColumnDelimiter>
+    <LineOfFirstData>1</LineOfFirstData>
+    <FieldIndexOfTimestamp>6</FieldIndexOfTimestamp>
+    <FieldIndexOfMarkers>0</FieldIndexOfMarkers>
+    <MarkerNumbers>1,2,3,4</MarkerNumbers>
+    <MarkerAliases>Start,Stop,Pause,Resume</MarkerAliases>
+    <EndingMarkers>end Baseline 1,end Baseline 2,end Star Search 1,end Star Search 2</EndingMarkers>
+  </EmotivMarkers>
+</Config>
