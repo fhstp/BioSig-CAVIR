@@ -196,4 +196,6 @@ pytest
 
 If you use this code or the CAVIR dataset, please cite the CAVIR Data Descriptor:
 
-> _TODO: add the Data Descriptor reference and the dataset DOI._
+Dataset DOI: 10.5281/zenodo.24310060
+
+> _TODO: add the Data Descriptor reference_
